@@ -14,10 +14,10 @@ plugins {
 android {
     compileSdk = 36
 
-    namespace = "at.bitfire.icsdroid"
+    namespace = "eu.dobreterapie.calendar"
 
     defaultConfig {
-        applicationId = "at.bitfire.icsdroid"
+        applicationId = "eu.dobreterapie.sync"
         minSdk = 23
         targetSdk = 36
 
@@ -26,7 +26,7 @@ android {
 
         setProperty("archivesBaseName", "icsx5-$versionCode-$versionName")
 
-        testInstrumentationRunner = "at.bitfire.icsdroid.HiltTestRunner"
+        testInstrumentationRunner = "eu.dobreterapie.calendar.HiltTestRunner"
 
         ksp {
             arg("room.schemaLocation", "$projectDir/schemas")
@@ -170,6 +170,13 @@ dependencies {
     implementation(libs.confettiKit)
 
     implementation(libs.kotlinx.serialization.core)
+
+    // CameraX & ML Kit
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.mlkit.barcode.scanning)
+    implementation(libs.guava)
 
     // for tests
     androidTestImplementation(libs.androidx.test.junit)

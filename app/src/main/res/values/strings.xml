@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">ICSx⁵</string>
+    <string name="app_name" translatable="false">DobreTerapie Sync</string>
 
     <string name="account_name">Calendar subscriptions</string>
-    <string name="account_type" translatable="false">at.bitfire.icsdroid</string>
+    <string name="account_type" translatable="false">eu.dobreterapie.calendar</string>
 
     <!-- common strings -->
+    <!-- Welcome screen -->
+    <string name="welcome_sync_message">Synchronizuj kalendarz dobreterapie.eu na swoje urządzenie</string>
+    <string name="welcome_slogan_line1">DobreTerapie Sync</string>
+    <string name="welcome_slogan_line2">Twoje wizyty w dobreterapie.eu zawsze pod ręką.</string>
+    <string name="welcome_scan_qr_button">Skanuj kod QR</string>
+    <string name="welcome_manual_link_button">Wpisz link ręcznie</string>
+    <string name="qr_scanner_title">Skanuj kod</string>
+    <string name="qr_scanner_error_camera_permission">Do skanowania kodów QR wymagany jest dostęp do aparatu.</string>
+    <string name="qr_scanner_instruction">Skieruj aparat na kod QR, aby automatycznie dodać kalendarz.</string>
+
     <string name="action_more">More</string>
     <string name="calendar_permissions_required">Calendar access</string>
     <string name="calendar_permissions_required_text">Allows accessing the database.</string>
@@ -59,6 +69,7 @@
     <!-- AddSubscriptionScreen -->
     <string name="activity_add_calendar">Subscribe to calendar</string>
     <string name="activity_add_calendar_subscribe">Subscribe</string>
+    <string name="add_calendar_sync_button">Synchronizuj kalendarz</string>
     <string name="add_calendar_subscribe_url">Subscribe to URL</string>
     <string name="add_calendar_subscribe_file">Subscribe to file</string>
     <string name="add_calendar_need_valid_uri">Valid URI required</string>

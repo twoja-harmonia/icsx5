@@ -1,3 +1,9 @@
+includeBuild("cert4android") {
+    dependencySubstitution {
+        substitute(module("com.github.bitfireat:cert4android")).using(project(":lib"))
+    }
+}
+
 pluginManagement {
     repositories {
         google()
